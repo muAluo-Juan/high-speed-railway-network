@@ -1,5 +1,5 @@
 """
-Delay time computation for high-speed trains.
+Delay number computation for railway stations.
 Input: the path of high-speed train operation data with delay time
 Output: delay number data of railway stations
 """
@@ -9,7 +9,7 @@ import numpy as np
 import time
 from pandas import DataFrame
 
-data = pd.read_csv('/high-speed train operation data with delay time.csv')   # corresponding path
+data = pd.read_csv('./high-speed train operation data with delay time.csv')   # corresponding path
 
 # station_delay_array: array used by each station to count the number of delays in the time slice
 duplicate = data.drop_duplicates('station_number')
@@ -59,4 +59,4 @@ for i in data_array:
                 break
 
 data_target_file = DataFrame(station_delay_array)
-data_target_file.to_csv('/delay number data of railway stations.csv')
+data_target_file.to_csv('./delay number data of railway stations.csv')

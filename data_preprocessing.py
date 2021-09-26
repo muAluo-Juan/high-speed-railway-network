@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Data reprocessing
+Data preprocessing
 Input: the path of high-speed train operation data
-Output: the file after reprocessing
+Output: the file after preprocessing
 """
 import pandas as pd
 import numpy as np
 
 from pandas import DataFrame
 
-data = pd.read_csv('/high-speed train operation data.csv') # change the path to the high-speed train operation data path
+data = pd.read_csv('./high-speed train operation data.csv') # change the path to the high-speed train operation data path
 print(len(data))
 data_array = np.array(data)
 
@@ -31,4 +31,4 @@ for i in data_array:
             i[9] = str(int(actual_depart / 60)) + ':' + str(actual_depart % 60).zfill(2) + ':00'
 
 result_file = DataFrame(data_array)
-result_file.to_csv('/high-speed train operation data after reprocessing.csv', mode='a', index=False, header=False)
+result_file.to_csv('./high-speed train operation data after preprocessing.csv', mode='a', index=False, header=False)

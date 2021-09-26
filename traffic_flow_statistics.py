@@ -9,12 +9,12 @@ import json
 
 from pandas import DataFrame
 
-train_delay_file = pd.read_csv('/junction stations')
-station_delay_file = pd.read_csv('/high-speed train operation data with delay time')
+train_delay_file = pd.read_csv('./junction stations.csv')
+station_delay_file = pd.read_csv('./high-speed train operation data with delay time.csv')
 train_delay_array = np.array(train_delay_file)
 station_delay_arrray = np.array(station_delay_file)
 
-with open('/junction station info.json') as f:
+with open('./junction station info.json') as f:
     junction_station = json.load(f)
 
 result = []
@@ -54,4 +54,4 @@ for i in junction_station:
     result.append(temp)
 
 result_file = DataFrame(result)
-result_file.to_csv('\junction stations data.csv', mode='a', header=False, index=False)
+result_file.to_csv('./junction stations data.csv', mode='a', header=False, index=False)

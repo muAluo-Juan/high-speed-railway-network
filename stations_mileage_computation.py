@@ -7,10 +7,10 @@ import pandas as pd
 import numpy as np
 from pandas import DataFrame
 
-file_1 = pd.read_csv('/high-speed trains mileage data1.csv')  # change to the path of high-speed trains mileage data
-file_2 = pd.read_csv('/high-speed trains mileage data2.csv')
-file_3 = pd.read_csv('/high-speed trains mileage data3.csv')
-tt = pd.read_csv('/alllines.csv') # change to the path of all operation lines
+file_1 = pd.read_csv('./high-speed trains mileage data1.csv')  # change to the path of high-speed trains mileage data
+file_2 = pd.read_csv('./high-speed trains mileage data2.csv')
+file_3 = pd.read_csv('./high-speed trains mileage data3.csv')
+tt = pd.read_csv('./alllines.csv') # change to the path of all operation lines
 
 data_1 = np.array(file_1)
 data_2 = np.array(file_2)
@@ -100,5 +100,5 @@ while i < len(data_3):
     i += 1
 
 result_file = DataFrame(result)
-result_file.to_csv('/adjacent railway stations mileage data', mode='a', index=False, header=False)
+result_file.to_csv('./adjacent railway stations mileage data.csv', mode='a', index=False, header=False)
 

@@ -16,9 +16,9 @@ def get_date(date):
     date1 = date.split(" ")[0]
     return date1
 
-station_delay_data_path = '/high-speed train operation data with delay time and train direction.csv'
-weather_data_path = '/weather related data.csv'
-merge_data_save_path = '/high-speed trains operation data.csv'
+station_delay_data_path = './high-speed train operation data with delay time and train direction.csv'
+weather_data_path = './weather related data.csv'
+merge_data_save_path = './high-speed trains operation data.csv'
 
 delay_data = pd.read_csv(station_delay_data_path, low_memory=False)
 
