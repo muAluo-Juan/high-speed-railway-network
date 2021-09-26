@@ -10,7 +10,7 @@ import datetime
 
 from pandas import DataFrame
 
-data = pd.read_csv('/high-speed train operation data after preprocessing.csv') # change to the path of high-speed train operation data after preprocessing
+data = pd.read_csv('./high-speed train operation data after preprocessing.csv') # change to the path of high-speed train operation data after preprocessing
 data_array = np.array(data)
 
 # process the date
@@ -45,4 +45,4 @@ for i in data_array:
     result.append(temp)
 
 data_file = DataFrame(result)
-data_file.to_csv('high-speed train operation data with delay time.csv', mode='a', index=False, header=False)
+data_file.to_csv('./high-speed train operation data with delay time.csv', mode='a', index=False, header=False)
