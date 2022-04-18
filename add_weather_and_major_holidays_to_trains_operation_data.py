@@ -1,6 +1,6 @@
 """
 Add weather related data and major holidays to high-speed train operation data with delay time and train direction
-Input: the path of high-speed train operation data with delay time and train direction
+Input: the file path of high-speed train operation data with delay time and train direction
 Output: high-speed trains operation data.csv
 """
 import pandas as pd
