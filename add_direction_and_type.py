@@ -1,7 +1,7 @@
 """
 Train direction and station type adding.
-Input: the path of high-speed train operation data with delay time and delay number data of railway stations
-Output: high-speed train operation data with delay time and train direction, delay number data of railway stations with station type
+Input: the file path of high-speed train operation data with delay time and delay number data of railway stations
+Output: high-speed train operation data with delay time and train direction, delayed train number data of railway stations with station type
 """
 import pandas as pd
 import numpy as np
