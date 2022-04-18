@@ -1,6 +1,6 @@
 """
-Delay number computation for railway stations.
-Input: the path of high-speed train operation data with delay time
+Delayed train number computation for railway stations.
+Input: the file path of high-speed train operation data with delay time
 Output: delay number data of railway stations
 """
 import datetime
@@ -26,7 +26,7 @@ for i in duplicate:
 
 data_array = np.array(data)
 for i in data_array:
-    # 到达延迟
+    # arrival delay
     if i[11] > 0:
         arrive_time = time.strptime(i[0] + ' ' + i[6], '%Y-%m-%d %H:%M:%S')
         arrive_timestamp = time.mktime(arrive_time)
@@ -42,7 +42,7 @@ for i in data_array:
                     j[5] += 1
                 break
 
-    # 出发延迟
+    # departure delay
     if i[12] > 0:
         depart_time = time.strptime(i[0] + ' ' + i[7], '%Y-%m-%d %H:%M:%S')
         depart_timestamp = time.mktime(depart_time)
