@@ -1,6 +1,6 @@
 """
 Delay time computation for high-speed trains.
-Input: the path of high-speed train operation data after preprocessing
+Input: the file path of high-speed train operation data after preprocessing
 Output: the file after delay time computation
 """
 
