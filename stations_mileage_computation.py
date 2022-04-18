@@ -1,6 +1,6 @@
 """
 Adjacent stations mileage computation.
-Input: the path of high-speed trains mileage data
+Input: the file path of high-speed trains mileage data
 Output: adjacent railway stations mileage data
 """
 import pandas as pd
