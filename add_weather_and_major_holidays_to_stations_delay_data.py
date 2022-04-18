@@ -1,9 +1,10 @@
 """
 Add weather related data and major holidays to delay number data of railway stations with station type
-Input: the path of  delay number data of railway stations with station type
+Input: the file path of  delay number data of railway stations with station type
 Output: railway stations delay data.csv
 """
 import pandas as pd
+
 pd.set_option('display.max_rows', 5000)
 pd.set_option('display.max_columns', 100)
 pd.set_option('display.width', 1000)
