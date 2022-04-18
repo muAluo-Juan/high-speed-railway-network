@@ -1,6 +1,6 @@
 """
-Junction stations traffic flow statistics.
-Input: the path of junction stations
+Statistics on train operation of junction stations.
+Input: the file path of junction stations
 Output: junction stations data
 """
 import pandas as pd
