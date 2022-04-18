@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Data preprocessing
-Input: the path of high-speed train operation data
+Data correction
+Input: the file path of high-speed train operation data
 Output: the file after preprocessing
 """
 import pandas as pd
